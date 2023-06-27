@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>メイン画面仮作成</title>
+</head>
+
+<body>
+  <header>
+    <h2 style="text-align: center;">
+      例えばここにタイトルを表示させる
+      </h1>
+  </header>
+  <div style="max-width: 600px; margin: auto;">
+    <div class="container1 border_solid" style="max-width: 500px; margin: auto;">
+      <div class="box border_solid" style="aspect-ratio:1">
+        ここに画像
+      </div>
+      <div class="box border_solid" style="overflow-y: auto; aspect-ratio:1">
+        <ul>
+          <li>こ</li>
+          <li>こ</li>
+          <li>は</li>
+          <li>なんなら</li>
+          <li>縦</li>
+          <li>に</li>
+          <li>並</li>
+          <li>べ</li>
+          <li>た</li>
+          <li>い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container2">
+      <a href="">
+        <div class=" backglound_red box border_solid" style="aspect-ratio:1"></div>
+      </a>
+      <a href="learning.html">
+        <div class="backglound_green box border_solid" style="aspect-ratio:1"></div>
+      </a>
+      <div class="container3" style="aspect-ratio:1">
+        <a href="">
+          <div class="backglound_blue box border_solid">青ボタン１</div>
+        </a>
+        <a href="">
+          <div class="backglound_blue box border_solid">青ボタン２</div>
+        </a>
+        <a href="">
+          <div class="backglound_blue box border_solid">青ボタン３</div>
+        </a>
+      </div>
+    </div>
+    <div>
+    </div>
+  </div>
+</body>
+
+<style>
+  .container1 {
+    display: grid;
+    /*グリッドレイアウト*/
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+  }
+
+  .container3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .box {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .backglound_red {
+    background: #F00;
+  }
+
+  .backglound_green {
+    background: #0F0;
+  }
+
+  .backglound_blue {
+    background: #00F;
+  }
+
+  .border_solid {
+    border: 1px solid #333333;
+    border-radius: 10px;
+
+  }
+</style>
+
+</html>
