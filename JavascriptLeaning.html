@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Javascript練習用画面</title>
+  </head>
+  <body>
+    <div>
+      <input type="button" value="文字を出力します！" onclick="Button_TextDispley1()">
+    </div>
+    <div id="TextOutput"></div>
+  </body>
+  <style></style>
+  <script>
+    function Button_TextDispley1() {
+      target = document.getElementById("TextOutput")
+      target.innerHTML = "HTMLタグ直下です";
+    }
+  </script>
+</html>

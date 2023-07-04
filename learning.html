@@ -9,7 +9,7 @@
 <body>
   <p>このページから戻るときは<a href="test.html">ここ</a>をクリック</p>
   <a href="test.html">
-    <div class="box border_solid">
+    <div class="box_m10p10 border_solid">
       リンクには図形もいける
     </div>
   </a>
@@ -28,24 +28,37 @@
     </tbody>
   </table>
   <div></div>
-  <div>
+  <div class="box_m10p10 border_solid">
     <form>
       <dl>
         <dt>テキスト入力フォーム</dt>
         <dd>
           <input type="text">
         </dd>
+
+        <dt>テキスト入力フォーム（４～８文字制限付き）</dt>
+        <dd>
+          <input type="text" minlength="4" maxlength="8">
+        </dd>
+
         <dt>パスワード入力フォーム（内容が●になる）</dt>
         <dd>
           <input type="password">
         </dd>
+
+        <dt>チェックボックス</dt>
+        <dd>
+          <li><input type="checkbox">aaaa</li>
+          <li><input type="checkbox">iii</li>
+        </dd>
+        <dt></dt>
       </dl>
     </form>
   </div>
 </body>
 
 <style>
-  .box {
+  .box_m10p10 {
     margin: 10px;
     padding: 10px;
   }

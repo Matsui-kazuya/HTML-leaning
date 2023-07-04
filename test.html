@@ -13,11 +13,11 @@
       </h1>
   </header>
   <div style="max-width: 600px; margin: auto;">
-    <div class="container1 border_solid" style="max-width: 500px; margin: auto;">
-      <div class="box border_solid" style="aspect-ratio:1">
+    <div class="container_col2divide border_solid" style="max-width: 500px; margin: auto;">
+      <div class="box_m10p10 border_solid" style="aspect-ratio:1">
         ここに画像
       </div>
-      <div class="box border_solid" style="overflow-y: auto; aspect-ratio:1">
+      <div class="box_m10p10 border_solid" style="overflow-y: auto; aspect-ratio:1">
         <ul>
           <li>こ</li>
           <li>こ</li>
@@ -32,26 +32,26 @@
         </ul>
       </div>
     </div>
-    <div class="container2">
-      <button type=”button” onclick="location.href='learning.html'" class=" backglound_red box border_solid" style="aspect-ratio:1">
+    <div class="container_col3divide">
+      <button type=”button” onclick="location.href='learning.html'" class=" backglound_red box_m10p10 border_solid" style="aspect-ratio:1">
         <div>
           赤いボタン(遷移する)
         </div>
       </button>
       <a href="learning.html">
-        <div class="backglound_green box border_solid" style="aspect-ratio:1">
+        <div class="backglound_green box_m10p10 border_solid" style="aspect-ratio:1">
           緑のhref(遷移する)
         </div>
       </a>
-      <div class="container3" style="aspect-ratio:1">
+      <div class="container_row3divide" style="aspect-ratio:1">
         <a href="">
-          <div class="box border_solid backglound_blue">青href１</div>
+          <div class="box_m10p10 border_solid backglound_blue">青href１</div>
         </a>
         <a href="">
-          <div class="box border_solid backglound_blue">青href２</div>
+          <div class="box_m10p10 border_solid backglound_blue">青href２</div>
         </a>
         <a href="">
-          <div class="box border_solid backglound_blue">青href３</div>
+          <div class="box_m10p10 border_solid backglound_blue">青href３</div>
         </a>
       </div>
     </div>
@@ -61,24 +61,24 @@
 </body>
 
 <style>
-  .container1 {
+  .container_col2divide {
     display: grid;
     /*グリッドレイアウト*/
     grid-template-columns: 1fr 1fr;
   }
 
-  .container2 {
+  .container_col3divide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 200px;
   }
 
-  .container3 {
+  .container_row3divide {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
-  .box {
+  .box_m10p10 {
     padding: 10px;
     margin: 10px;
   }
