@@ -5,16 +5,28 @@
     <title>Javascript練習用画面</title>
   </head>
   <body>
+    <div class="box_m10p10 border_solid">
     <div>
       <input type="button" value="文字を出力します！" onclick="Button_TextDispley1()">
     </div>
     <div id="TextOutput"></div>
-  </body>
-  <style></style>
+  </div>
+  <style>
+    .box_m10p10 {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .border_solid {
+      border: 1px solid #333333;
+      border-radius: 10px;
+    }
+  </style>
   <script>
     function Button_TextDispley1() {
       target = document.getElementById("TextOutput")
       target.innerHTML = "HTMLタグ直下です";
     }
   </script>
+  </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript練習用画面</title>
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1>テキストボックスにまつわる勉強</h1>
+      <ol>
+        <li>テキストボックス</li>
+        <li>デフォルトの文字列を追加する</li>
+        <li>ダミーのテキストを設定する</li>
+        <li>入力した文字を表示させる</li>
+      </ol>
+    </div>
+    <div>
+      テキストボックスに入力した文字を表示させる
+      <div class="box_m10p10 border_solid">
+        <label for="textBox1">入力欄:</label>
+        <input type="text" placeholder="デフォルトの文字列" id="textBox1" style="width:200px;" />
+        <input type="button" value="決定" onclick="clickButton1()">
+        <p>取得した値がここに表示されます → <span id="span1"></span></p>
+      </div>
+      メモ<br>
+      <ul>
+        <li>薄い文字で例文を設定したい場合はplaceholder="「ここに任意の文字列」"</li>
+        例：<input type="text" placeholder="デフォルトの文字列">
+        <li>対して、デフォルト値として文字列を設定したい場合、もうすでに文字列を入れておきたい場合は、value="「ここに任意の文字列」"</li>
+        例：<input type="text" value="デフォルトの文字列">
+      </ul>
+      
+    </div>
+  </div>
+  <style>
+    .box_m10p10 {
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .border_solid {
+      border: 1px solid #333333;
+      border-radius: 10px;
+    }
+  </style>
+  <script>
+    function clickButton1() {
+      const t1 = document.getElementById("textBox1").value;
+      document.getElementById("span1").textContent = t1;
+    }
+  </script>
+</body>
+
+</html>

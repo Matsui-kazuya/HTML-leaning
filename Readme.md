@@ -41,10 +41,11 @@ boxなどはmargin→paddingの順でm〇p〇のように記載
 
 ## メモ
 HTML上でもCSSやJavascriptは使用できる
+できる限りClassで記載を行い、特定のものだけをCSSで行う
 ```
 <body>
   HTMLの記載
-</body>
+
 
 <style>
   CSSの記載
@@ -54,4 +55,5 @@ HTML上でもCSSやJavascriptは使用できる
   javascriptの記載
 </script>
 
+</body>
 ```
